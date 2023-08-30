@@ -16,7 +16,7 @@
             <btn name="kO" />
         </input>
         <input name="UAToggleSyberiaHideItem">
-            <btn name="kV" />
+            <btn name="kJ" />
         </input>
         <input name="UAToggleSyberiaUseBackpack">
             <btn name="kB" />
