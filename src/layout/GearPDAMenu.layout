@@ -12,15 +12,16 @@ FrameWidgetClass GearPDAMenu {
  vexactsize 1
  {
   ImageWidgetClass PagePDA {
-   visible 0
+   visible 1
    inheritalpha 0
    ignorepointer 0
+   position 0 0
    size 1 1
    hexactpos 1
    vexactpos 1
    hexactsize 0
    vexactsize 0
-   image0 "SyberiaScripts\data\pda\gui_messages.paa"
+   image0 "SyberiaScripts\data\pda\PDA.edds"
    mode blend
    "src alpha" 1
    "no wrap" 1
@@ -28,8 +29,8 @@ FrameWidgetClass GearPDAMenu {
    {
     TextListboxWidgetClass contact_list {
      color 0.1255 0.1451 0.0706 0.8235
-     position 240.545 165
-     size 324.91 270
+     position 162.62302 133.83101
+     size 401.27402 270
      halign left_ref
      valign top_ref
      hexactpos 1
@@ -49,8 +50,8 @@ FrameWidgetClass GearPDAMenu {
     TextListboxWidgetClass messages_txt {
      ignorepointer 0
      color 0.1255 0.1451 0.0706 0.7843
-     position 566 165
-     size 650 394
+     position 566 97.98701
+     size 808.961 461.013
      hexactpos 1
      vexactpos 1
      hexactsize 1
@@ -76,8 +77,8 @@ FrameWidgetClass GearPDAMenu {
     }
     TextWidgetClass your_id_text {
      color 0.1961 0.2157 0.1137 1
-     position 238.94499 127.20599
-     size 320 26
+     position 161.02301 99.154
+     size 402.59698 32.2338
      hexactpos 1
      vexactpos 1
      hexactsize 1
@@ -323,7 +324,7 @@ FrameWidgetClass GearPDAMenu {
      ignorepointer 1
      color 0.1255 0.1451 0.0706 0.6745
      position 1113 562
-     size 101 40
+     size 171.13 40
      hexactpos 1
      vexactpos 1
      hexactsize 1
@@ -333,7 +334,7 @@ FrameWidgetClass GearPDAMenu {
       ButtonWidgetClass semd_msg_btn {
        color 0.1255 0.1451 0.0706 0.298
        position 0 0
-       size 1 1
+       size 0.97138 1
        hexactpos 1
        vexactpos 1
        hexactsize 0
@@ -346,7 +347,7 @@ FrameWidgetClass GearPDAMenu {
          ignorepointer 1
          color 0.5882 0.6627 0.3412 1
          position 0 0
-         size 1 1
+         size 1.00998 1
          hexactpos 1
          vexactpos 1
          hexactsize 0
@@ -364,8 +365,8 @@ FrameWidgetClass GearPDAMenu {
     PanelWidgetClass mute_btnback {
      ignorepointer 1
      color 0.1255 0.1451 0.0706 0.6745
-     position 240 435
-     size 323 25
+     position 1190.14001 98.37751
+     size 167.67001 18.3023
      hexactpos 1
      vexactpos 1
      hexactsize 1
@@ -374,7 +375,7 @@ FrameWidgetClass GearPDAMenu {
      {
       ButtonWidgetClass mute_btn {
        color 0.1255 0.1451 0.0706 0.298
-       position 0 0
+       position 14.026 -1.5585
        size 1 1
        hexactpos 1
        vexactpos 1
@@ -387,7 +388,7 @@ FrameWidgetClass GearPDAMenu {
         TextWidgetClass mute_btntext {
          ignorepointer 1
          color 0.5882 0.6627 0.3412 1
-         position 0 0
+         position 1.55836 1.55853
          size 1 1
          hexactpos 1
          vexactpos 1
@@ -416,7 +417,7 @@ FrameWidgetClass GearPDAMenu {
    vexactpos 1
    hexactsize 0
    vexactsize 0
-   image0 "SyberiaScripts\data\pda\gui.paa"
+   image0 "SyberiaScripts\data\pda\PDA.edds"
    mode blend
    "src alpha" 1
    "no wrap" 1
@@ -424,8 +425,8 @@ FrameWidgetClass GearPDAMenu {
    {
     PanelWidgetClass map_widget_panel {
      clipchildren 1
-     position 240.24199 163.24899
-     size 974.79224 440
+     position 163.87801 97.79439
+     size 1208.56006 505.45499
      hexactpos 1
      vexactpos 1
      hexactsize 1
@@ -434,7 +435,8 @@ FrameWidgetClass GearPDAMenu {
       MapWidgetClass map_widget {
        ignorepointer 0
        color 0.4941 0.5569 0.2824 0.7843
-       size 1 1
+       position 0.77937 -0.00003
+       size 0.99991 1.00076
        halign center_ref
        valign center_ref
        hexactpos 1
@@ -457,7 +459,7 @@ FrameWidgetClass GearPDAMenu {
    vexactpos 1
    hexactsize 0
    vexactsize 0
-   image0 "SyberiaScripts\data\pda\gui_messages.paa"
+   image0 "SyberiaScripts\data\pda\PDA.edds"
    mode blend
    "src alpha" 1
    "no wrap" 1
@@ -616,7 +618,7 @@ FrameWidgetClass GearPDAMenu {
    ignorepointer 0
    color 1 1 1 0
    position 240.481 155
-   size 975.13898 40
+   size 1046.83008 40
    valign bottom_ref
    hexactpos 1
    vexactpos 1
