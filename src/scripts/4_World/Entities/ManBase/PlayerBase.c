@@ -8,6 +8,9 @@ modded class PlayerBase
 	float m_mindStateValue;
 	float m_mindStateLast;
 	
+    // radiation zone
+    float m_zoneRadTotalValue = 0;
+
 	// Skills container
 	ref SkillsContainer m_skills;
 	
@@ -36,6 +39,8 @@ modded class PlayerBase
 		m_mindStateLast = GetSyberiaConfig().m_mindstateMaxValue;
 		RegisterNetSyncVariableFloat("m_mindStateValue");
 		RegisterNetSyncVariableFloat("m_mindStateLast");
+
+        RegisterNetSyncVariableFloat("m_zoneRadTotalValue");
 	}
 	
 	override void EEInit()
@@ -46,6 +51,10 @@ modded class PlayerBase
 		}
 	}
 	
+    float GetRadTotalValue() {
+        return m_zoneRadTotalValue;
+    }
+
 	override void EEDelete(EntityAI parent)
 	{
 		super.EEDelete(parent);

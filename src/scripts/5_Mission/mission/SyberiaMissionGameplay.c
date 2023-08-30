@@ -201,11 +201,13 @@ modded class MissionGameplay
 		float overdosedEffect = Math.Clamp(((float)player.GetSybStats().m_overdosedLevel - 0.5) * 0.1, 0, 0.3);
 		PPERequester_SybOverdose.Cast(PPERequesterBank.GetRequester(PPERequesterBank.REQ_SYB_OVERDOSE)).SetOverdosedEffect(overdosedEffect);
 		
-		float painEffect = Math.Clamp(player.GetCurrentPainLevel() * 0.1, 0, 0.3);
+		//float painEffect = Math.Clamp(player.GetCurrentPainLevel() * 0.1, 0, 0.3);
+		float painEffect = 0;
 		PPERequester_SybPain.Cast(PPERequesterBank.GetRequester(PPERequesterBank.REQ_SYB_PAIN)).SetPainEffect(painEffect);	
 		PPERequester_SybRadiation.Cast(PPERequesterBank.GetRequester(PPERequesterBank.REQ_SYB_RADIATION)).SetRadiationEffect(player.GetRadiationSicknessLevel());
 		
-		float concussionEffect = Math.Clamp(((int)player.GetSybStats().m_concussionHit) * 0.1, 0, 0.1);
+		//float concussionEffect = Math.Clamp(((int)player.GetSybStats().m_concussionHit) * 0.1, 0, 0.1);
+		float concussionEffect = 0;
 		PPERequester_SybConcussion.Cast(PPERequesterBank.GetRequester(PPERequesterBank.REQ_SYB_CONCUSSION)).SetConcussionEffect(concussionEffect);
 		
 		SyberiaSleepingLevel sleepingLevel = player.GetSleepingProcessLevel();

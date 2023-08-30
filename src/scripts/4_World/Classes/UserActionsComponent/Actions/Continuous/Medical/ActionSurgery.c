@@ -21,7 +21,7 @@ class ActionSurgeryCB : ActionContinuousBaseCB
 {
 	override void CreateActionComponent()
 	{
-		m_ActionData.m_ActionComponent = new CAContinuousTime(20);
+		m_ActionData.m_ActionComponent = new CAContinuousTime(5);
 	}
 };
 
